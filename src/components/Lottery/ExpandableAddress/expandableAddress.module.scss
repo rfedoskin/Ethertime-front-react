@@ -1,0 +1,36 @@
+.container {
+  background: #F1F1F1;
+  width: 50px;
+  border-radius: 6px;
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+
+  &:hover {
+    .address {
+      max-width: unset;
+      background: #fff;
+      box-shadow: 0 1px 5px #B7B7B7;
+      color: #434343;
+    }
+  }
+}
+.address {
+  position: absolute;
+  border-radius: 6px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  padding-top: 1px;
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 2px;
+  max-width: 100%;
+  color: #B0B0B0;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 10;
+  vertical-align: middle;
+}

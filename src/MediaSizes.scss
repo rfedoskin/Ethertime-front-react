@@ -1,0 +1,14 @@
+$screen-l-max: 1279px;
+$screen-xl-min: 1280px;
+
+@mixin l {
+   @media (max-width: #{$screen-l-max}) {
+       @content;
+   }
+}
+
+@mixin xl {
+   @media (min-width: #{$screen-xl-min}) {
+       @content;
+   }
+}

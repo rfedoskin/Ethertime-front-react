@@ -1,0 +1,93 @@
+@import "../../MediaSizes";
+
+.wrapper {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.switchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  >div {
+    white-space: nowrap;
+  }
+}
+
+.supportLink {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  box-shadow: 0 0 15px #e7e6e6;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  outline: none;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+
+  @include l {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+
+  @include xl {
+    font-size: 17px;
+    padding: 5px 10px 5px 22px;
+  }
+
+  .angle {
+    @include l {
+      display: none;
+    }
+
+    @include xl {
+      position: absolute;
+      bottom: 3px;
+      left: 3px;
+    }
+  }
+
+  &:hover {
+    border-color: #5bc1f0;
+    outline: none;
+  }
+
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.col1 {
+  flex-basis: 40%;
+  margin-right: 0;
+  margin-left: auto;
+  text-align: right;
+}
+
+.col2 {
+  margin: 5px 20px;
+  margin-top: 3px;
+}
+
+.col3 {
+  flex-basis: 40%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.active {
+  color: #0e73a2;
+}

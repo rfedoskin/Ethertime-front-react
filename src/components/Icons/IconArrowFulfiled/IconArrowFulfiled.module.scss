@@ -1,0 +1,15 @@
+@import "../../../MediaSizes";
+
+.root {
+  fill: #d2cece;
+
+  @include l {
+    width: 13px;
+    height: 21px;
+  }
+
+  @include xl {
+    width: 20px;
+    height: 30px;
+  }
+}

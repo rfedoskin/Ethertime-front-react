@@ -1,0 +1,30 @@
+.hero {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: -3px;
+}
+
+.logo {
+  margin: auto 3px;
+  width: 23px;
+  height: auto;
+}
+
+.text {
+  color: #707070;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 18px;
+}
+
+.name {
+  color: #696968;
+  font-size: 17px;
+	font-weight: 400;
+	text-transform: uppercase;
+}

@@ -1,0 +1,279 @@
+@import "../../MediaSizes";
+
+.mainHeader {
+  margin-bottom: 28px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 10000;
+  transition: max-height .25s ease;
+  max-height: 55px;
+
+  .headerContainer {
+    position: relative;
+    background: #fff;
+    z-index: 10;
+  }
+}
+
+.panel {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 300;
+  position: relative;
+  top: 0;
+  transition: top .25s ease, max-height .25s ease;
+  z-index: -1;
+  background: #fff;
+  box-shadow: 0 18px 15px -15px rgba(0, 0, 0, .2);
+
+  &.collapsed {
+    box-shadow: 0 18px 20px -20px rgba(0, 0, 0, .2);
+  }
+
+  &.hidden {
+    top: -35px;
+
+    &.collapsed {
+      top: unset;
+      top: -134px;
+    }
+  }
+}
+
+.infoText {
+  margin: 2px auto 2px 0;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 55px;
+}
+
+.panelRow {
+  display: flex;
+  justify-content: space-between;
+
+  @include l {
+    height: 136px;
+  }
+
+  @include xl {
+    height: 100px;
+  }
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+}
+
+.collapseAreaWrapper {
+  position: relative;
+}
+
+.collapseButton {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    min-height: 1px;
+    background: #C2C2C2;
+    border-left: 25px solid #fff;
+    border-right: 25px solid #fff;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 25px;
+    transition: max-width .25s ease, min-height .25s ease, background-color .25s ease, border-left .25s ease, border-right .25s ease;
+  }
+
+  &.collapsed {
+    &::before {
+      display: none;
+    }
+  }
+
+  &:hover {
+    &::before {
+      min-height: 4px;
+      max-width: 100%;
+      background: #E0E0E0;
+      border-left: 0 solid #fff;
+      border-right: 0 solid #fff;
+    }
+    svg {
+      path {
+        stroke: #5bc1f0;
+      }
+    }
+  }
+}
+
+.colFirst {
+  flex: 0 1 1086px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.buttonIcon {
+  flex: 0 0 26px;
+  margin-right: 8px;
+}
+
+.colSecond {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.colMetamask {
+  background-color: #f8f8f8;
+}
+
+.mainPanel {
+  background-color: #F5F5F5;
+  min-height: 100px;
+}
+
+.languageMenu {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  &::before {
+    content: '';
+    display: block;
+    margin: 0 9px 0 15px;
+    height: 12px;
+    width: 1px;
+    background: #C2C2C2;
+  }
+}
+
+.pagesMenu {
+  margin-right: -9px;
+}
+
+.mainPanelText {
+  @include l {
+    width: 240px;
+    font-size: 15px;
+  }
+
+  @include xl {
+    width: 280px;
+  }
+}
+
+.howto {
+  text-align: center;
+
+  @include l {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.2;
+
+    @include l {
+      text-align: center;
+    }
+
+    @include xl {
+      text-align: left;
+    }
+  }
+
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 16px;
+    box-shadow: 0 3px 8px #E1E1E1;
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 4px 8px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    user-select: none;
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 8px;
+
+    @include l {
+      max-width: 179px;
+      flex-wrap: nowrap;
+    }
+
+    @include xl {
+      flex-wrap: wrap;
+    }
+
+    &:hover {
+      border: 1px solid #5bc1f0;
+      box-shadow: 2px 2px 6px #d8d7d7;
+    }
+  
+    &:active {
+      border: 1px solid #5bc1f0;
+      box-shadow: none;
+    }
+  }
+}
+
+.panelRow .colSecond {
+  position: relative;
+}
+
+
+.heroContainer {
+  display: flex;
+  align-items: center;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+}
+
+.hintOverlay {
+  background: rgba(0,0,0, .36);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+.or {
+  width: 1px;
+  height: calc(100% - 20px);
+  background: #d2d2d2;
+  margin: 0 10px;
+}

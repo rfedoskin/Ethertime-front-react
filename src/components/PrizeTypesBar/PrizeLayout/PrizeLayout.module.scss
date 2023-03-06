@@ -1,0 +1,204 @@
+@import "../../../MediaSizes";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 0 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.subHeader {
+  display: flex;
+  justify-content: space-between;
+
+  .subTitle {
+    text-align: center;
+    padding: 0 10px;
+    margin: 16px 0 25px 0;
+
+    @include l {
+      font-size: 14px;
+    }
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 4px 20px;
+  border-right: 1px solid #cecccc;
+  font-weight: 300;
+  line-height: 20px;
+
+  &:last-child {
+    flex-grow: 1;
+    border-right: none;
+  }
+
+  @include l {
+    font-size: 16px;
+  }
+
+  @include xl {
+    font-size: 18px;
+  }
+}
+
+.playersCol {
+  flex: 0 .67 375px;
+}
+
+.winNumberCol {
+  flex: 0 .8 322px;
+}
+
+.resultsCol {
+  flex: 1 1 550px;
+  display: flex;
+  justify-content: center;
+}
+
+.prizeDistribution {
+  display: flex;
+}
+
+.members {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+
+  .member {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: #000;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include l {
+      width: 200px;
+      font-size: 15px;
+    }
+
+    @include xl {
+      width: 272px;
+      font-size: 19px;
+    }
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: calc(50% - 26px);
+  right: -10px;
+}
+
+.currentWinner {
+  position: relative;
+
+  .firstResult {
+    position: absolute;
+    left: calc(50% - 30px);
+    color: #68c5f0;
+    
+
+    @include l {
+      top: calc(50% - 55px);
+      width: 54px;
+      height: 80px;
+    }
+
+    @include xl {
+      top: calc(50% - 73px);
+      width: 82px;
+      height: 123px;
+    }
+
+    .iconWinner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      stroke-width: 2px;
+    }
+  }
+
+  .firstNumber {
+    position: absolute;
+    top: calc(50% - 19px);
+    left: calc(50% - 7px);
+    font-weight: 400;
+
+    @include l {
+      font-size: 25px;
+    }
+
+    @include xl {
+      font-size: 29px;
+    }
+  }
+}
+
+.distribution {
+  margin-left: 20px;
+
+  .member {
+    margin: 0 0 20px 0;
+    color: #000;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.currentWinner > div:first-child {
+      color: #00aeff;
+    }
+
+    @include l {
+      width: 266px;
+      font-size: 15px;
+    }
+
+    @include xl {
+      width: 325px;
+      font-size: 19px;
+    }
+  }
+}
+
+.switcher {
+  @include l {
+    padding-left: 20px;
+  }
+
+  @include xl {
+    padding-left: 44px;
+  }
+}
+
+.extraInfo {
+  margin: 20px 0 35px;
+}
+
+.winnerLabel {
+  position: absolute;
+
+  @include l {
+    top: calc(50% - 90px);
+    left: calc(50% - 43px);
+    font-size: 15px;
+  }
+
+  @include xl {
+    top: calc(50% - 107px);
+    left: calc(50% - 35px);
+    font-size: 17px;
+  }
+}

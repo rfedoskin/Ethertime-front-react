@@ -1,0 +1,60 @@
+.flexContainer {
+  margin: 20px 0;
+  display: inline-block;
+  color: #797979;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.switchContainer {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.col {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.col + .col {
+  justify-content: flex-start;
+
+}
+
+.col + .col::before {
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 1px;
+  left: -1px;
+  margin: auto;
+  border-right: 1px solid #969696;
+}
+
+.userMessage {
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.button {
+  padding: 2px 10px;
+  margin: 0 5px;
+
+  &.completedLotteriesButton {
+    margin-left: 2px;
+  }
+  
+  &.currentLotteriesButton {
+    margin-right: 3px;
+  }
+}
+

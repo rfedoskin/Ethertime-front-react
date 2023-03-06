@@ -1,0 +1,20 @@
+.hint {
+  background: #fff;
+  padding: 20px 14px 14px 14px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+.text, .closeText {
+  display: block;
+  white-space: nowrap;
+}
+.text {
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 0 100px;
+  font-size: 17px;
+}
+.closeText {
+  text-align: left;
+  font-size: 15px;
+}

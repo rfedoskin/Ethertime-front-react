@@ -1,0 +1,39 @@
+@import "../../../MediaSizes";
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px #e7e6e6;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.current {
+    background-color: transparent;
+    border: 3px solid #d6d6d6;
+  }
+
+  @include l {
+    width: 75px;
+    height: 43px;
+  }
+
+  @include xl {
+    width: 89px;
+    height: 54px;
+  }
+
+  svg {
+    @include l {
+      width: 50px;
+    }
+  }
+}

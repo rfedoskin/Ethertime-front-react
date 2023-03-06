@@ -1,0 +1,43 @@
+%label {
+  display: block;
+  width: 62px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 16px;
+  padding-top: 5px;
+}
+
+.labelAll {
+  @extend %label;
+  background-image: url('./labelAll.svg');
+  padding-left: 8px;
+}
+
+.label123 {
+  @extend %label;
+  background-image: url('./label123.svg');
+  padding-left: 6px;
+}
+
+.label1 {
+  @extend %label;
+  background-image: url('./label1.svg');
+  padding-left: 9px;
+}
+
+.label30 {
+  @extend %label;
+  background-image: url('./label30.svg');
+  padding-left: 9px;
+}
+
+.label50 {
+  @extend %label;
+  background-image: url('./label50.svg');
+  padding-left: 9px;
+}

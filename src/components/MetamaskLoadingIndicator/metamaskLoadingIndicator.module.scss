@@ -1,0 +1,38 @@
+.dots {
+  position: relative;
+  margin-bottom: 3px;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 1px;
+  background-color: #e4e4e4;
+  position: absolute;
+  animation: appear 3s infinite;
+}
+
+.dot2 {
+  left: 7px;
+  animation-delay: 0.5s;
+}
+
+.dot3 {
+  left: 14px;
+  animation-delay: 1s;
+}
+
+@keyframes appear {
+  0% {
+    background-color: #bad405;
+  }
+  49% {
+    background-color: #bad405;
+  }
+  50% {
+    background-color: #e4e4e4;
+  }
+  100% {
+    background-color: #e4e4e4;
+  }
+}

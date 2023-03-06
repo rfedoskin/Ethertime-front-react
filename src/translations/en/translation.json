@@ -1,0 +1,129 @@
+{
+  "languageMenu": {
+    "en": "English",
+    "ru": "Русский"
+  },
+  "pagesMenu": {
+    "history": "History",
+    "support": "Support center"
+  },
+  "networkSelector": {
+    "popoverInfo": "Select the Main network or the Ropsten test network, to see how our lottery works without spending Ethers of the main network, you can get test Ethers of the Ropsten network for free. The contract code for both networks is exactly the same."
+  },
+  "searchPanel": {
+    "inputPlaceholder": "Enter Your ETH address to get your winnigs and see results.",
+    "walletNotFound": "This address was not found on the Ethereum network, check that the wallet is entered correctly.",
+    "walletNotUsed": "This wallet number has never participated in the lottery yet."
+  },
+  "searchPanelTable": {
+    "id": "Lottery №",
+    "time": "Age",
+    "winNumber": "Win №",
+    "yourNumbers": "Your №",
+    "winAmount": "Win (ETH)",
+    "winNumberAwaitPopup": "For the convenience of users, we automatically call the \"get a winning number\" function, but the application is decentralized and any user can call this function, if waiting for the winning number is long, you can call this function, just go to the page of the lottery you need in the search panel for your wallet",
+    "getWinningsHint": "If you want to get your winnings without using a metamask, send a zero transaction to the contract with this data",
+    "getWinningsButton": "Get your winnings",
+    "copyData": "Copy data",
+    "paidOut": "paid out",
+    "lastPageButton": "Last",
+    "allParticipation": "All my lotteries"
+  },
+  "contractInfo": {
+    "address": "Contract address:",
+    "messageTitle1": "Not using Metamask? Send Ethereum from other services.",
+    "messageTitle2": "Attention",
+    "messageTitle3": "Gas limit",
+    "messageSubtitle1": "You can check the status of participations, transactions, and results in the search panel by your wallet number.",
+    "messageText1": "It is enough to send Ethereum from your address to the address of the contract in the amount equal to the ticket price of your chosen lottery, set Gas limit 250000 and the contract will automatically determine your transaction in the lottery you need, assigns a game number to your wallet and you are in the game.",
+    "messageText2": "Attention:<br> If you send to the contract an amount that is not equal to the exact cost of any from existing tickets, the contract will automatically determine your funds to the nearest lottery, costing less than the amount sent and will return back the difference, or your transaction will fail and the funds will be returned back.",
+    "messageText3": "Значение Gas limit, для успешного подтверждения сетью вашей транзакции, зависит от количества участников в лотерее на данный момент, чем больше участников, тем выше Gas limit для участия. Чтобы ваша транзакция прошла успешно, мы автоматически рассчитываем рекомендуемый Gas limit. Посмотреть рекомендуемый Gas limit можно здесь:",
+    "infoText": "Send the cost of the ticket to the address of the contract, and you are in the game...",
+    "copyLabel": "Copy Contract adress",
+    "copySuccess": "Copied",
+    "etherscanLabel": "Etherscan.io link",
+    "paymentTransactionLabel": "Payment transaction",
+    "howtoLink": "How to create an ETH wallet and send Ethereum?"
+  },
+  "metamaskPanel": {
+    "text1": "or",
+    "text2": "Connect to the Metamask Plugin and participate by clicking on \"Play\".",
+    "infoText": "To play, send Ethereum from any services to the contract address or connect to Metamask.",
+    "buttonOpen": "Cкрыть",
+    "buttonClose": "details...",
+    "placeholder": "Enter Your Ethereum wallet number to see the results.",
+    "howto": "How to install and use Metamask"
+  },
+  "metamaskDownloadLink": {
+    "linkText": "Download Metamask (official website)",
+    "linkTextShort": "Download Metamask"
+  },
+  "metamaskHint": {
+    "text": "This button is for Metamask, connect Metamask or see other ways.",
+    "closeText": "Click anywhere to close this message."
+  },
+  "lotteryResultSwitch": {
+    "selectLottery": "LOTTERIES",
+    "resultsAndDraws": "RESULTS"
+  },
+  "lotteryTable": {
+    "posiblePrize": "Возможные выигрыши",
+    "lotteryNumber": "Lottery<br>№",
+    "cost": "Ticket<br>price",
+    "bank": "Bank",
+    "members": "Players",
+    "cycle": "Lottery<br>cycle",
+    "time": "Time<br>to end.",
+    "type": "Lottery<br>draw type",
+    "cashback": "Etherback",
+    "copyButton": "Копировать Gas limit"
+  },
+  "lotteryTableRow": {
+    "lotteryLink": "Lottery page",
+    "lastCycleText": "This cycle is the last, after lottery drawing, the lottery<br>will be removed from the contract. You can still take<br>part until time runs out."
+  },
+  "cashbackPopover": {
+    "col1": "Etherback is a discount (% of the ticket price), which automatically returns to your wallet when buying a ticket, the maximum discount is 3%.The sooner you participate, the greater the discount:",
+    "col2": "- The first quarter of the cycle time - 3%<br>- The second - 2%<br>- Third - 1%<br>- Fourth - 0%.<br>Watch out for the green stripe."
+  },
+  "footer": {
+    "text": "About Lottery draw type.",
+    "buttonOpen": "Hide",
+    "buttonClose": "details..."
+  },
+  "resultTypeSwitch": {
+    "previous": "Last completed Lotteries",
+    "upcoming": "Waiting for results",
+    "supportLink": "How is the winning number generated?"
+  },
+  "lottery": {
+    "cover": "There are no players in this cycle yet, you can be the first, if no one buys a ticket before the end of the cycle, all funds will be automatically returned to you.",
+    "bank": "Bank",
+    "updateData": "Refresh",
+    "moreDetail": "more details...",
+    "allMembers": "All players",
+    "waitingPayment": "Waiting for payout ...",
+    "waitingWinningNumber": "Wait a winning number...",
+    "first": "1st",
+    "second": "2nd",
+    "third": "3rd"
+  },
+  "prizeLayout": {
+    "playersColTitle": "Game numbers are given in the order of wallet registration in the lottery. (confirmed transaction in ETH network).",
+    "winNumberColTitle": "After the lottery cycle finished, the winning number is determined.",
+    "winnerLabel": "For example",
+    "zeroNumberExplanation": "Due to the specifics of the blockchain network, game numbers begin with \"0\".",
+    "lotteryExample": "Example: 10 players, ticket price - 1 ETH,<br>Bank - 8.85 ETH. *",
+    "lotteryMath": "* The contract takes away commissions from the general bank - 11.5%. Example: 1 ETH * 10 Players = 10 ETH -11.5% (lottery commission) = 8.85 ETH - bank for the draw."
+  },
+  "winNumberGeneration": {
+    "title": "How generate win number?",
+    "subtitle": "Random number",
+    "list": "<b>1.</b> At the end of the lottery time we take the last registered wallet and transaction block number. Basis to calculate a random number, take the hash of the next block.<br><b>2.</b> A block hash will be used to calculate a new hash using the keccak256 algorithm.<br><b>3.</b> Then the keccak256 hash will be converted to a 256-bit number, this is a fairly large number.<br><b>4.</b> The number, obtained in the previous step, will be divided by the number of players and the remainder from divisions + 1.<br><b>5.</b> The received number will be the winner number.",
+    "imageTitle": "Random number algorithm in contract code."
+  },
+  "loading": {
+    "line1": "Connecting to web3...",
+    "line2": "Ethereum <strong>Ropsten</strong> Test Network"
+  }
+}

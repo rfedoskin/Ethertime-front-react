@@ -1,0 +1,27 @@
+.col1 {
+  width: 500px;
+  padding: 20px;
+}
+
+.col2 {
+  position: relative;
+  width: 350px;
+  padding: 20px;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    top: 15px;
+    bottom: 19px;
+    left: -10px;
+    background: #E3E3E3;
+  }
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: '- '
+}

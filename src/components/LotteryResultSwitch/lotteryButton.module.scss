@@ -1,0 +1,31 @@
+.lotteryButton {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  
+  svg {
+    box-shadow: 2px 0px 5px #DBD9D9;
+    border-radius: 5px;
+  }
+
+  &:hover svg {
+    box-shadow: 2px 2px 6px #B0AEAE;
+    border: none;
+  }
+
+  &:active svg {
+    box-shadow: none;
+    border: none;
+  }
+}
+
+.lotteryButtonActive {
+  svg {
+    box-shadow: none;
+  }
+  &:hover svg {
+    box-shadow: none;
+    border: none;
+  }
+}

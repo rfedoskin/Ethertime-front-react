@@ -1,0 +1,67 @@
+{
+  "name": "crypto-lotto-client",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js --ext .jsx",
+    "lint:fix": "yarn lint --fix --quiet",
+    "prettier": "prettier --write"
+  },
+  "dependencies": {
+    "classnames": "2.2.6",
+    "i18next": "17.0.7",
+    "lodash": "4.17.15",
+    "lodash.memoize": "4.1.2",
+    "prop-types": "15.7.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-i18next": "10.11.4",
+    "react-onclickoutside": "6.8.0",
+    "react-popover": "0.5.10",
+    "react-redux": "7.1.1",
+    "react-router-dom": "5.0.1",
+    "react-scripts": "3.0.1",
+    "react-scroll-to-component": "1.0.2",
+    "redux": "4.0.4",
+    "redux-saga": "1.0.5",
+    "reselect": "4.0.0",
+    "sanitize.css": "11.0.0",
+    "web3": "1.2.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "17.1.1",
+    "eslint-config-prettier": "6.0.0",
+    "husky": "3.0.2",
+    "lint-staged": "9.2.1",
+    "node-sass": "4.12.0",
+    "prettier": "1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.(js|jsx)": [
+      "yarn prettier",
+      "yarn lint:fix",
+      "git add"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

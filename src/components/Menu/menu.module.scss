@@ -1,0 +1,72 @@
+.menu {
+  font-size: 17px;
+  font-weight: 300;
+  color: #000000;
+  position: relative;
+}
+
+.button {
+  font: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-transform: uppercase;
+  min-width: 34px;
+  height: 23px;
+  line-height: 23px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
+  text-shadow: none;
+  border: none;
+  background-color: transparent;
+  outline: none;
+
+  &.active,
+  &:active,
+  &:hover {
+    background-color: #e1e0e0;
+    border: 0;
+  }
+}
+
+.wrapper {
+  margin-top: 4px;
+  position: absolute;
+  width: 186px;
+  right: 0;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.16);
+  border-radius: 11px;
+  padding: 5px 22px;
+  background-color: #fff;
+  z-index: 1001;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  border-bottom: 1px solid #e1e0e0;
+  text-align: center;
+  padding: 7px 0;
+  user-select: none;
+	cursor: pointer;
+  &:last-child {
+    border: none;
+	}
+	&:hover {
+		color: #5bc1f0;	
+	}
+	&:active {
+    color: #e1e0e0;
+  }
+}
+
+.item[disabled] {
+	cursor: default;
+	color: #e1e0e0;
+}

@@ -1,0 +1,42 @@
+.button {
+  padding: 10px 15px;
+  box-shadow: 0 3px 10px #e7e6e6;
+  border-radius: 8px;
+  background-color: #5bc1f0;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  min-width: 90px;
+  min-height: 54px;
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 10px #e7e6e6;
+
+  &.highlighted {
+    position: relative;
+    z-index: 1000;
+    box-shadow: none;
+  }
+
+  &:hover {
+    box-shadow: 2px 3px 10px #c2bebe;
+    background-color: #6fd2ff;
+  }
+
+  &:active {
+    background-color: #5bc1f0;
+  }
+}
+
+.buttonContainer {
+  position: relative;
+}
+
+.hint {
+  position: absolute;
+  right: 95px;
+  top: 0;
+}
+

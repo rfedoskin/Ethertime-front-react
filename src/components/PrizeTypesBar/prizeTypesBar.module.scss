@@ -1,0 +1,66 @@
+.footer {
+  color: #000000;
+  font-weight: 300;
+	margin-top: 63px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 30px;
+  border-top: thin solid #C2C2C2;
+
+  &.expanded {
+    border-top-color: rgba(255,255,255,.0);
+    .buttonLabel {
+      display: none;
+    }
+  }
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+}
+
+.infoPanel {
+  background: linear-gradient(to bottom, #efefef 0%, #f8f8f8 100%);
+}
+
+.infoText {
+  font-size: 17px;
+  margin: 2px auto 2px 0;
+}
+
+.icons {
+  width: 200px;
+  height: 11px;
+  margin-left: 30px;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-image: url('./labelAll.svg'), url('./label50.svg'), url('./label30.svg'),
+    url('./label123.svg'), url('./label1.svg');
+  background-position: 0% 50%, 25% 50%, 50% 50%, 75% 50%, 100% 50%;
+}
+
+.collapseButton {
+  position: relative;
+
+  &:hover {
+    background: #fafafa;
+
+    .row {
+      border-top-color: rgba(255,255,255,.0);
+    }
+    svg {
+      path {
+        stroke: #5bc1f0;
+      }
+      
+    }
+  }
+}
+
+.content {
+  background-color: #FAFAFA;
+}

@@ -1,0 +1,63 @@
+.button {
+  cursor: pointer;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  transition: .2s;
+
+  &.forward,
+  &.back {
+    .arrow {
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      vertical-align: middle;
+      border-bottom: 1px solid #353535;
+    }
+
+    &:hover {
+      .arrow {
+        border-color: #5bc1f0;
+      }
+    }
+
+    &:disabled {
+      .arrow{
+        border-color: gray;
+      }
+    }
+  }
+
+  &.forward {
+    .arrow {
+      transform: rotate(-45deg);
+      border-right: 1px solid #353535;
+    }
+  }
+
+  &.back {
+    .arrow {
+      transform: rotate(45deg);
+      border-left: 1px solid #353535;
+    }
+  }
+
+  &.last {
+    padding: 4px 12px;
+    background: #fff;
+    box-shadow: 0 1px 5px #d8d8d8;
+    border-radius: 4px;
+
+    &:hover {
+      box-shadow: 2px 3px 10px #c2bebe;
+    }
+
+    &:active {
+      box-shadow: 0 1px 5px #d8d8d8;
+    }
+  }
+}

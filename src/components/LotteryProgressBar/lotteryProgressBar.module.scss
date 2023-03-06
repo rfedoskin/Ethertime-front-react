@@ -1,0 +1,39 @@
+@import "../../MediaSizes";
+
+.wrapper {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+
+  @include l {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span {
+    display: block;
+
+    @include l {
+      margin-right:4px;
+    }
+  
+    @include xl {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.progress {
+  width: 37px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgba(188, 188, 188, 0.4);
+}
+
+.progressBar {
+  width: 0;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #a1dc9e;
+}

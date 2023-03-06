@@ -1,0 +1,42 @@
+@import "../../MediaSizes";
+
+.container {
+  @include l {
+    margin: 33px 0 10px;
+
+    .row {
+      justify-content: space-around;
+    }
+  }
+
+  @include xl {
+    margin: 33px auto 10px;
+
+    .row {
+      justify-content: center;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;  
+}
+
+.lottery {
+  margin-bottom: 20px;
+
+  @include l {
+    margin-right: 0;
+  }
+
+  @include xl {
+    margin-right: 30px;
+  }
+
+  &:last-child,
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}

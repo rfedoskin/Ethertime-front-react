@@ -1,0 +1,79 @@
+@import "../../../MediaSizes";
+
+.progressContainer {
+  position: relative;
+  width: 375px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  background: #fff;
+  text-align: center;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-right: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.17);
+
+  @include l {
+    min-width: 29px;
+  }
+
+  @include xl {
+    min-width: 36px;
+  }
+}
+
+.barWrapper {
+  position: relative;
+  flex-grow: 1;
+  
+
+  @include l {
+    padding: 0 4px 0 16px;
+  }
+
+  @include xl {
+    padding: 0 4px 0 22px;
+  }
+}
+
+.barText {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 300;
+
+  @include l {
+    font-size: 17px;
+  }
+
+  @include xl {
+    font-size: 19px;
+  }
+}
+
+.barText span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bar {
+  background-color: rgba(0, 160, 227, .44);
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  transition: right 500ms ease-in-out, background-color 500ms ease-in-out;
+  opacity: 0.44;
+}

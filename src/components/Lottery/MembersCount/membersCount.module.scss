@@ -1,0 +1,22 @@
+.playersCountContainer {
+  position: relative;
+
+  span {
+    transition: color .25s ease, opacity .25s ease;
+  }
+  .newMember {
+    position: absolute;
+    right: -30px;
+    opacity: 0;
+  }
+  
+  &.highlighted {
+    color: #13130e;
+
+    .playersCount,
+    .newMember {
+      opacity: 1;
+      color: #1BBCFF;
+    }
+  }
+}
